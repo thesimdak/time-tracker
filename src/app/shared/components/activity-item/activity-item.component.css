@@ -1,0 +1,24 @@
+mat-divider {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.activity-item-title {
+  display: block;
+  margin-left:20%
+}
+
+.activity-item-start-button {
+  margin-left:40%;
+}
+
+.activity-item-title-name {
+  font-size: 130%;
+}
+
+.activity-item-title-desc {
+  font-size: 100%;
+  color: grey;
+  padding-top: 0.5rem
+  
+}
