@@ -2,23 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { NewActivityComponent } from "./new-activity.component";
+import { ActivityReportTableComponent } from "./activity-report-table.component";
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
     imports: [
               MatFormFieldModule,
               MatInputModule,
               MatGridListModule,
-              MatButtonModule
+              MatButtonModule,
+              MatTableModule,
+              MatSelectModule
               ],
-              exports: [NewActivityComponent],
+              exports: [ActivityReportTableComponent],
   declarations: [
-    NewActivityComponent
+ActivityReportTableComponent
   ],
   providers: []
 })
-export class NewActivityModule { }
+export class ActivityReportTableModule { }

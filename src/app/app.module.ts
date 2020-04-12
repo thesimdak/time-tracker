@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivitiesModule } from "./pages/activities/activities.module";
-import { MatToolbarModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { ActivityReportModule } from "./pages/activity-report/activity-report.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,

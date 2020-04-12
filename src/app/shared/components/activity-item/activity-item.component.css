@@ -3,13 +3,14 @@ mat-divider {
   margin-right: 2rem;
 }
 
+.item-content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .activity-item-title {
   display: block;
   margin-left:20%
-}
-
-.activity-item-start-button {
-  margin-left:40%;
 }
 
 .activity-item-title-name {
