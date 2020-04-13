@@ -3,11 +3,12 @@
     <span class="m-2">
       <mat-form-field style="width:60vw">
         <mat-label>Start a new activity</mat-label> 
-        <input matInput placeholder="Type name of the activity">
+        <input matInput matAutosize="'false" placeholder="Type name of the activity" [value]='activityName' (input)='activityName = $event.target.value'>
       </mat-form-field>
     </span>
     <span class="m-2"> 
-      <button mat-flat-button color="accent">Start</button>
+        <button mat-flat-button color="accent" (click)="addActivity()">Start</button>
+
     </span> 
   </div>
 </div>

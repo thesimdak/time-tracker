@@ -8,6 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import { ActivityListComponent } from "./activity-list.component";
 import { ActivityItemModule } from "../activity-item/activity-item.module";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { ActivityItemModule } from "../activity-item/activity-item.module";
               MatInputModule,
               MatGridListModule,
               MatButtonModule,
-              ActivityItemModule
+              ActivityItemModule,
+              CommonModule 
               ],
               exports: [ActivityListComponent],
   declarations: [
@@ -23,4 +25,6 @@ import { ActivityItemModule } from "../activity-item/activity-item.module";
   ],
   providers: []
 })
-export class ActivityListModule { }
+export class ActivityListModule {
+    
+}

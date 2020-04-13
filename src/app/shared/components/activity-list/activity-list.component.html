@@ -1,4 +1,3 @@
-<tt-activity-item></tt-activity-item>
-<tt-activity-item></tt-activity-item>
-<tt-activity-item></tt-activity-item>
-<tt-activity-item></tt-activity-item>
+<div *ngFor="let activity of activities$ | async">
+  <tt-activity-item [activity]='activity'></tt-activity-item>
+</div>
