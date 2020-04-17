@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivityService } from "src/app/shared/services/activity.service";
-import { Activity } from "src/app/shared/interfaces/activities-state.interface";
+import { Activity } from "src/app/shared/interfaces/activity.interface";
 import { Observable, of } from "rxjs";
 
 @Component({

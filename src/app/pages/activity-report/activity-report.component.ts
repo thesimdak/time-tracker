@@ -13,7 +13,6 @@ export class ActivityReportComponent {
     }
     
     public goToActivities(): void {
-        console.log('hovno');
         this.router.navigateByUrl("/")
     }
 

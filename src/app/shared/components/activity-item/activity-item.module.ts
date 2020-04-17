@@ -10,9 +10,12 @@ import {MatCardModule} from '@angular/material/card';
 import { ActivityItemComponent } from "./activity-item.component";
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { CommonModule } from '@angular/common';  
 
 @NgModule({
     imports: [
+              CommonModule,
+              BrowserModule,
               MatFormFieldModule,
               MatInputModule,
               MatGridListModule,

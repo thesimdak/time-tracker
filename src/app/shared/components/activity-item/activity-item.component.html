@@ -1,14 +1,22 @@
 <mat-divider></mat-divider>
 <div (click)="openReport()" class="item-content row mt-3">
-  <div class="col-7">
+  <div class="col-8">
     <div class="activity-item-title">
         <div class="activity-item-title-name">{{activity.name}}</div>
-        <div class="activity-item-title-desc">Last duration: 6h 52m</div>
+        <div *ngIf="!activity.currentRun" class="activity-item-title-desc">Last duration: {{getLastRunDuration()}}</div>
+        <div *ngIf="activity.currentRun" class="activity-item-title-desc">Duration: {{duration}}</div>
       </div>
   </div>
-  <div class="col-5 text-center">
-      <button mat-flat-button color="accent">
-        <span class="material-icons">play_arrow</span>
-      </button>
+  <div class="col-4 text-center">
+      <ng-container *ngIf="!activity.currentRun">
+          <button (click)="startActivity();$event.stopPropagation()" mat-flat-button color="accent">
+              <span class="material-icons">play_arrow</span>
+          </button>
+      </ng-container>
+      <ng-container *ngIf="activity.currentRun">
+          <button (click)="stopActivity();$event.stopPropagation()" mat-stroked-button color="warn">
+              <span class="material-icons">stop</span>
+          </button>
+      </ng-container>
   </div>
 </div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivityService } from "src/app/shared/services/activity.service";
 import { Observable } from "rxjs";
-import { Activity } from "src/app/shared/interfaces/activities-state.interface";
+import { Activity } from "src/app/shared/interfaces/activity.interface";
 
 @Component({
   selector: 'tt-new-activity',
@@ -15,7 +15,10 @@ export class NewActivityComponent {
     constructor(private activityService: ActivityService) {}
     
     public addActivity() {
-        this.activityService.addActivity(this.activityName);
+        if (this.activityName !== '') {
+            this.activityService.addActivity(this.activityName);
+        }
+        this.activityName = '';
     }
     
     

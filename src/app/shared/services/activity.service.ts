@@ -1,9 +1,9 @@
 import { Injectable } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { State } from "../../store/reducers";
-import { addActivity } from "../../store/actions/activity.actions";
+import { addActivity, startActivity, stopActivity } from "../../store/actions/activity.actions";
 import { Observable } from "rxjs";
-import { Activity } from "../../shared/interfaces/activities-state.interface";
+import { Activity } from "../../shared/interfaces/activity.interface";
 import { getActivities } from "../../store/reducers/activities.reducer";
 import { select } from "@ngrx/store";
 
@@ -16,6 +16,14 @@ export class ActivityService {
     
     public addActivity(name: string): void {
         this.store.dispatch(addActivity({name: name}))
+    }
+    
+    public startActivity(activityId: string): void {
+        this.store.dispatch(startActivity({activityId}))
+    }
+    
+    public stopActivity(activityId: string): void {
+        this.store.dispatch(stopActivity({activityId}))
     }
     
     public getActivities(): Observable<Activity[]> {
