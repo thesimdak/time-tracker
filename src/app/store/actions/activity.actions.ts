@@ -14,3 +14,8 @@ export const stopActivity = createAction(
         '[Activities] stopActivity',
         props<{ activityId: string }>()
     );
+
+export const deleteActivity = createAction(
+        '[Activities] deleteActivity',
+        props<{ activityId: string }>()
+    );

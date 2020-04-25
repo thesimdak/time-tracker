@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -8,6 +7,8 @@ import { ActivityPeriodChooserComponent } from "./activity-period-chooser.compon
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
+import { RouterModule } from '@angular/router';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
     imports: [
@@ -15,7 +16,9 @@ import {MatSelectModule} from '@angular/material/select';
               MatInputModule,
               MatGridListModule,
               MatButtonModule,
-              MatSelectModule
+              MatSelectModule,
+              RouterModule,
+              CommonModule
               ],
               exports: [ActivityPeriodChooserComponent],
   declarations: [

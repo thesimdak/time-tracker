@@ -3,26 +3,20 @@
     <span (click)="goToActivities()" class="material-icons">arrow_back_ios</span>
   </div>
   <div class="col-6">
-    <h4>Prace Tacker 1</h4>
+    <h4>{{activity.name}}</h4>
   </div>
   <div class="col-2 mb-2">
-      <button mat-stroked-button color="basic">Delete</button>
+      <button mat-stroked-button color="basic" (click)="deleteActivity()">Delete</button>
   </div>
 </div>
 <mat-divider></mat-divider>
-<div class="row">
+<div class="row mt-2">
   <div class="col text-center">
-    <tt-activity-period-chooser></tt-activity-period-chooser>
+    <tt-activity-period-chooser (periodSelected)="this.setPeriod($event)"></tt-activity-period-chooser>
   </div>
 </div>
 <div class="row">
   <div class="col">
-    <tt-activity-report-table></tt-activity-report-table>
-  </div>
-</div>
-<div class="mt-4 row">
-  <div class="col text-center">
-    <span class="mr-1"><button mat-stroked-button color="basic">Add To Archive</button></span>
-    <span class="ml-1"><button mat-stroked-button color="basic">Synchronize</button></span>
+    <tt-activity-report-table [selectedYear]="this.selectedYear" [selectedMonth]="this.selectedMonth"></tt-activity-report-table>
   </div>
 </div>

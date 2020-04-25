@@ -35,7 +35,7 @@ export class ActivityItemComponent implements OnInit {
     }
     
     public openReport(): void {
-        this.router.navigateByUrl('/activity-report');
+        this.router.navigate(['/activity-report', this.activity.id]);
     }
     
     public getLastRunDuration(): string {

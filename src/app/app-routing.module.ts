@@ -6,7 +6,7 @@ import { ActivityReportComponent } from "./pages/activity-report/activity-report
 const routes: Routes = [
                         { path: '', redirectTo: '/activities', pathMatch: 'full' },
                         { path: 'activities', component: ActivitiesComponent },                  
-                        { path: 'activity-report', component: ActivityReportComponent },                  
+                        { path: 'activity-report/:id', component: ActivityReportComponent },                  
                     ];
 
 @NgModule({

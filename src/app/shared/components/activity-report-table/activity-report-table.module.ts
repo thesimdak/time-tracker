@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,6 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTableModule} from '@angular/material/table';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     imports: [
@@ -17,7 +17,8 @@ import {MatTableModule} from '@angular/material/table';
               MatGridListModule,
               MatButtonModule,
               MatTableModule,
-              MatSelectModule
+              MatSelectModule,
+              CommonModule
               ],
               exports: [ActivityReportTableComponent],
   declarations: [

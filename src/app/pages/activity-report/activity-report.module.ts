@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { ActivityReportComponent } from './activity-report.component';
@@ -22,7 +22,8 @@ import { ActivityReportTableModule } from "../../shared/components/activity-repo
               MatDividerModule,
               RouterModule,
               ActivityPeriodChooserModule,
-              ActivityReportTableModule
+              ActivityReportTableModule,
+              CommonModule
               ],
   declarations: [
     ActivityReportComponent

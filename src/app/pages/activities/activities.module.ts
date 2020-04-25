@@ -1,8 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { ActivitiesComponent } from './activities.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { NewActivityModule } from "../../shared/components/new-activity/new-activity.module";
 import { ActivityListModule } from "../../shared/components/activity-list/activity-list.module";

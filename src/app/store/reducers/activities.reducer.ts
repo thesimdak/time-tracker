@@ -1,6 +1,6 @@
 import { ActivitiesState } from "../../shared/interfaces/activities-state.interface";
 import { createReducer, on } from "@ngrx/store";
-import { addActivity, stopActivity, startActivity } from "../../store/actions/activity.actions";
+import { addActivity, stopActivity, startActivity, deleteActivity } from "../../store/actions/activity.actions";
 import { createSelector } from "@ngrx/store";
 import { State } from "../../store/reducers";
 import * as uuid from 'uuid';
@@ -39,6 +39,16 @@ export const activitiesReducer = createReducer(initialActivitiesState,
             let items = [...state.items.slice(0, activityIndex), activity];
             items = [...items, ...state.items.slice(activityIndex+1, state.items.length)]
             return {...state, items};
+        }),
+        on(deleteActivity, (state: ActivitiesState, {activityId}) => {
+            let activity: Activity = state.items.filter(activity => activity.id == activityId)[0];
+            let activityIndex: number = state.items.map(activity => activity.id).indexOf(activity.id);
+            activity = {...activity, currentRun: {...activity.currentRun, endTimeStamp: new Date().getTime() }};
+            activity = {...activity, activityRuns: [...activity.activityRuns, activity.currentRun,]};
+            activity = {...activity, currentRun: undefined};
+            let items = [...state.items.slice(0, activityIndex)];
+            items = [...items, ...state.items.slice(activityIndex+1, state.items.length)]
+            return {...state, items};
         }));
 
 export function ActivitiesReducer(state, action) {
@@ -48,3 +58,9 @@ export function ActivitiesReducer(state, action) {
 export const activities = (state: State) => state.activities;
 
 export const getActivities = createSelector(activities, state => state.items);
+
+export const getActivity = createSelector(activities, (state, props) => {
+    return state.items.filter(activity => 
+        {return activity.id === props.activityId}
+    )[0];
+});
