@@ -8,6 +8,8 @@ import { ActivitiesModule } from "./pages/activities/activities.module";
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ActivityReportModule } from "./pages/activity-report/activity-report.module";
 import { AppStoreModule } from "src/app/store/app-store.module";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { AppStoreModule } from "src/app/store/app-store.module";
     ActivityReportModule,
     ActivitiesModule,
     MatToolbarModule,
-    AppStoreModule
+    AppStoreModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -23,3 +23,7 @@ mat-divider {
   padding-top: 0.5rem
   
 }
+
+.pointer:hover {
+    cursor: pointer;
+}
