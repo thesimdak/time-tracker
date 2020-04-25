@@ -40,7 +40,7 @@ export class ActivityReportComponent implements OnInit, OnDestroy {
     }
 
     public goToActivities(): void {
-        this.router.navigateByUrl("/")
+        this.router.navigateByUrl("/", { replaceUrl: true })
     }
 
     public deleteActivity() {

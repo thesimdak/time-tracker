@@ -10,11 +10,12 @@ mat-divider {
 
 .activity-item-title {
   display: block;
-  margin-left:10%
+  margin-left:10%;
 }
 
 .activity-item-title-name {
   font-size: 130%;
+  word-wrap: break-word;
 }
 
 .activity-item-title-desc {

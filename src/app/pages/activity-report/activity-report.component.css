@@ -1,3 +1,7 @@
 .pointer:hover {
     cursor: pointer;
 }
+
+.activity-name {
+  word-wrap: break-word;
+}

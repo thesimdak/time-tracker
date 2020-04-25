@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587816589658,
+  "timestamp": 1587822622008,
   "index": "/time-tracker/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "/time-tracker/favicon.ico",
         "/time-tracker/index.html",
-        "/time-tracker/main-es2015.88085700d61ece0c4af6.js",
-        "/time-tracker/main-es5.88085700d61ece0c4af6.js",
+        "/time-tracker/main-es2015.80c8f69bc98290b09e81.js",
+        "/time-tracker/main-es5.80c8f69bc98290b09e81.js",
         "/time-tracker/manifest.webmanifest",
         "/time-tracker/polyfills-es2015.690002c25ea8557bb4b0.js",
         "/time-tracker/polyfills-es5.4da951a34919c71abe40.js",
         "/time-tracker/runtime-es2015.1eba213af0b233498d9d.js",
         "/time-tracker/runtime-es5.1eba213af0b233498d9d.js",
-        "/time-tracker/styles.9855c890d2158e20016f.css"
+        "/time-tracker/styles.c3b49a63079c83331f81.css"
       ],
       "patterns": []
     },
@@ -49,15 +49,15 @@
     "/time-tracker/assets/icons/icon-72x72.png": "aa278b9deda9d85245384efd59624dc08c2ec708",
     "/time-tracker/assets/icons/icon-96x96.png": "9a5711c4f82770c365aeed68106c4147dd996d99",
     "/time-tracker/favicon.ico": "ef9f16fa42f6a903a24c2f997ff51f16e6ed4edc",
-    "/time-tracker/index.html": "28d7fd2fc485ecbdc384ba65cabe74efa8613af0",
-    "/time-tracker/main-es2015.88085700d61ece0c4af6.js": "54d4508bbb9f8887617211723fdee0abff4b466f",
-    "/time-tracker/main-es5.88085700d61ece0c4af6.js": "017381273495f841b81393a6f354f42fc68546fe",
+    "/time-tracker/index.html": "78b8386005be5559ce5a2077a81e12effeace5ff",
+    "/time-tracker/main-es2015.80c8f69bc98290b09e81.js": "2367aec4d1041d374a9dd51c025169858094f6b7",
+    "/time-tracker/main-es5.80c8f69bc98290b09e81.js": "dafa061e7b835bcdf41b683bf2f40dee7560c1b4",
     "/time-tracker/manifest.webmanifest": "70af7fb588026842f66f83e6d4ee286955766a3e",
     "/time-tracker/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/time-tracker/polyfills-es5.4da951a34919c71abe40.js": "e275bfda787ab64971380ef8042cecd2b3ef309a",
     "/time-tracker/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/time-tracker/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/time-tracker/styles.9855c890d2158e20016f.css": "0ec3c759f7809582b395bc8ac944a75a9b5a38b0"
+    "/time-tracker/styles.c3b49a63079c83331f81.css": "06e0a12d16721203556b1c1dbe256d255d36a82f"
   },
   "navigationUrls": [
     {
