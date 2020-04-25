@@ -1,6 +1,6 @@
 # TimeTracker
 
-Simple PWA App for tracking time of different activities. Works offline, no registration or sign up is needed. Can be used and installed from this URL: https://github.com/thesimdak/time-tracker
+Simple PWA App for tracking time of different activities. Works offline, no registration or sign up is needed. Can be used and installed from this URL: https://thesimdak.github.io/time-tracker/
 
 ## Development server
 
