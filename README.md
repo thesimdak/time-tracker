@@ -1,6 +1,6 @@
 # TimeTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+Simple PWA App for tracking time of different activities. Works offline, no registration or sign up is needed. Can be used and installed from this URL: https://github.com/thesimdak/time-tracker
 
 ## Development server
 
