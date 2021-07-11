@@ -42,6 +42,8 @@ export class ActivityReportTableComponent implements OnInit, OnDestroy, OnChange
     
     public ngOnChanges() {
         if (this.activity) {
+            this.filteredRuns = [];
+            this.tableData = [];
             this.filterRuns(this.activity.activityRuns);
             
             let firstDayOfMonth: Date = new Date(this.selectedYear, this.selectedMonth-1, 1); 
